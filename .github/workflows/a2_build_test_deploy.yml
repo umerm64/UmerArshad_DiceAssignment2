@@ -34,13 +34,12 @@ jobs:
     runs-on: ubuntu-latest
     needs: job1_build_push_image
     steps:
+      - uses: actions/checkout@v3
       -
         name: Test my app
         working-directory: ./
         run: |
           echo "Start test"
-          echo $(ls)
-          echo $(ls ..)
           python3 test_app.py
           echo "Stop test"
 
