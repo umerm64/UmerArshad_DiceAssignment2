@@ -1,6 +1,7 @@
 name: Dice Analytics Assignment 2 (Build test and deploy flask application)
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - 'main'
