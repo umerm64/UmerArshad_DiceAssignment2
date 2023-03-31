@@ -39,6 +39,8 @@ jobs:
         working-directory: ./
         run: |
           echo "Start test"
+          ls
+          ls ..
           python3 test_app.py
           echo "Stop test"
 
