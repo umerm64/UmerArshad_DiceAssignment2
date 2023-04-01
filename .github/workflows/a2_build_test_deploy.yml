@@ -45,7 +45,7 @@ jobs:
           echo "Stop test"
 
   job3_deploy_image:
-    runs-on: [self-hosted, Linux, X64, ec2]
+    runs-on: self-hosted
     needs: job2_test_app
     steps:
       -
